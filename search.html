@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/5d1d5aa1e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- main.js -->
+    <script async defer src="./js/main.js"></script>
+    <!-- weather.js -->
+    <script async defer src="./js/weather.js"></script>
+    <!-- index.js -->
+    <script async defer src="./js/index.js"></script>
+    <!-- modal.js -->
+    <script async defer src="./js/modal.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__statusbar">
+        <div class="statusbar__clock">7:04</div>
+        <div class="statusbar__weather">날씨</div>
+        <ul class="statusbar__icons">
+          <li><i class="fas fa-signal"></i></li>
+          <li><i class="fas fa-wifi"></i></li>
+          <li><i class="fas fa-battery-full"></i></li>
+        </ul>
+      </div>
+      <nav class="header__navbar">
+        <div class="navbar__column">
+          <div class="navbar__logo">
+            <a href="index.html">
+              <i class="fab fa-youtube"></i>
+              <span class="navbar__title">YouTube</span>
+            </a>
+          </div>
+        </div>
+        <div class="navbar__column">
+          <ul class="navbar__icons">
+            <li>
+              <a href="#"><i class="fas fa-mobile"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-video"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-search"></i></a>
+            </li>
+            <li>
+              <a id="toggleLogin" href="login.html"
+                ><i class="fas fa-user-circle"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- main -->
+    <main class="index">
+      <section class="search">
+        <ul class="search__nav">
+          <li class="nav__item">
+            <a href="#"><i class="fas fa-fire"></i> 인기</a>
+          </li>
+          <li class="nav__item">
+            <a href="#"><i class="fas fa-music"></i> 음악</a>
+          </li>
+          <li class="nav__item">
+            <a href="#"><i class="fas fa-dice"></i> 게임</a>
+          </li>
+          <li class="nav__item">
+            <a href="#"><i class="fas fa-film"></i> 영화</a>
+          </li>
+          <li class="nav__item">
+            <a href="#"><i class="fas fa-lightbulb"></i> 학습</a>
+          </li>
+        </ul>
+      </section>
+      <div class="index__content">
+        <div class="content__video">
+          <!-- https://www.videvo.net/stock-video-footage/ -->
+          <video
+            src="https://cdn.videvo.net/videvo_files/video/free/2020-07/small_watermarked/200629_Oxford%20Couple_01_4k_061_preview.webm"
+            controls
+            autoplay
+          ></video>
+        </div>
+        <div class="content__description">
+          <div class="description__img">
+            <img src="https://placeimg.com/128/128/1" alt="프로필 사진" />
+          </div>
+          <div class="description__column">
+            <div class="clamp__wrapper">
+              <div class="description__content clamp">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+                quaerat porro excepturi vel velit quae architecto, totam eaque a
+                doloribus cum laboriosam magni tempora maiores nulla facilis
+                saepe cupiditate perspiciatis.Odit, rerum dolorum sit odio
+                repudiandae, ratione esse qui, repellat similique optio ipsam
+                porro. Nesciunt sint deserunt quia veritatis, id dignissimos et
+                possimus libero, recusandae, ipsum magnam animi excepturi
+                delectus!
+              </div>
+              <div class="description__clamp">
+                <i id="clamp" class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="description__info">
+              영화의 형제 &middot; 조회수 31만회 &middot; 1개월 전
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="index__content">
+        <div class="content__video">
+          <!-- https://www.videvo.net/stock-video-footage/ -->
+          <video
+            src="https://ak.picdn.net/shutterstock/videos/19365364/preview/stock-footage-follow-me-girl-concept-young-pretty-happy-student-model-smiling-and-walking-in-park-couple-hands.webm"
+            controls
+            autoplay
+          ></video>
+        </div>
+        <div class="content__description">
+          <div class="description__img">
+            <img src="https://placeimg.com/128/128/2" alt="프로필 사진" />
+          </div>
+          <div class="description__column">
+            <div class="clamp__wrapper">
+              <div class="description__content clamp">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+                quaerat porro excepturi vel velit quae architecto, totam eaque a
+                doloribus cum laboriosam magni tempora maiores nulla facilis
+                saepe cupiditate perspiciatis.Odit, rerum dolorum sit odio
+                repudiandae, ratione esse qui, repellat similique optio ipsam
+                porro. Nesciunt sint deserunt quia veritatis, id dignissimos et
+                possimus libero, recusandae, ipsum magnam animi excepturi
+                delectus!
+              </div>
+              <div class="description__clamp">
+                <i id="clamp" class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="description__info">
+              영화의 형제 &middot; 조회수 31만회 &middot; 1개월 전
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="index__content">
+        <div class="content__video">
+          <!-- https://www.videvo.net/stock-video-footage/ -->
+          <video
+            src="https://ak.picdn.net/shutterstock/videos/1056294278/preview/stock-footage-backside-view-of-stylish-young-women-walking-and-carrying-paper-bags-after-shopping-millennial.webm"
+            controls
+            autoplay
+          ></video>
+        </div>
+        <div class="content__description">
+          <div class="description__img">
+            <img src="https://placeimg.com/128/128/3" alt="프로필 사진" />
+          </div>
+          <div class="description__column">
+            <div class="clamp__wrapper">
+              <div class="description__content clamp">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+                quaerat porro excepturi vel velit quae architecto, totam eaque a
+                doloribus cum laboriosam magni tempora maiores nulla facilis
+                saepe cupiditate perspiciatis.Odit, rerum dolorum sit odio
+                repudiandae, ratione esse qui, repellat similique optio ipsam
+                porro. Nesciunt sint deserunt quia veritatis, id dignissimos et
+                possimus libero, recusandae, ipsum magnam animi excepturi
+                delectus!
+              </div>
+              <div class="description__clamp">
+                <i id="clamp" class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="description__info">
+              영화의 형제 &middot; 조회수 31만회 &middot; 1개월 전
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- // main -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <nav class="footer__navbar">
+        <ul class="navbar__icons">
+          <li>
+            <a href="./index.html"
+              ><i class="fas fa-home"></i><span>홈</span></a
+            >
+          </li>
+          <li class="active">
+            <a href="./search.html"
+              ><i class="far fa-compass"></i><span>탐색</span></a
+            >
+          </li>
+          <li>
+            <a href="./subscribe.html"
+              ><i class="far fa-caret-square-right"></i><span>구독</span></a
+            >
+          </li>
+          <li>
+            <a href="./notice.html"
+              ><i class="far fa-bell"></i><span>알림</span></a
+            >
+          </li>
+          <li>
+            <a href="./list.html"
+              ><i class="far fa-list-alt"></i><span>보관함</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <!-- // footer -->
+
+    <!-- modal -->
+    <div class="modal">
+      <div class="modal__container">
+        <div class="modal__header">
+          <div class="modal__title">제목</div>
+          <span>&times;</span>
+        </div>
+        <div class="modal__body">
+          <div class="moda__content">내용</div>
+          <div class="modal__close"><button type="button">닫기</button></div>
+        </div>
+      </div>
+    </div>
+    <!-- // modal -->
+
+    <!-- scrollBtn -->
+    <div class="scroll hide">
+      <button class="scroll__top">
+        <i class="fas fa-angle-double-up"></i>
+      </button>
+      <button class="scroll__bottom">
+        <i class="fas fa-angle-double-down"></i>
+      </button>
+    </div>
+  </body>
+</html>

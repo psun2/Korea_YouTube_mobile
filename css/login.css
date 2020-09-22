@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+.login .login__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--font-xl) 0;
+}
+
+.login .login__header .login__title {
+  font-size: var(--font-xxl);
+  margin-bottom: var(--font-xl);
+}
+
+.login .login__header .login__register a {
+  padding: var(--font-lg);
+}
+
+.login .login__local {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login .login__local .local__data input {
+  padding: var(--font-s);
+  min-width: 285px;
+}
+
+.login .login__local button {
+  padding: var(--font-s);
+  min-width: 285px;
+}
+
+.login .login__local button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  color: var(--color-white);
+  margin-bottom: var(--font-xl);
+}
+
+.login .login__local button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.login .login__local button:active,
+.login .login__sns #kakao__login:active {
+  transform: scale(0.99);
+}
+
+.login .login__local .local__data div {
+  margin-bottom: var(--font-s);
+}
+
+.login .login__sns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login .login__sns #kakao__login {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.login .login__sns button img {
+  min-width: 280px;
+}
+
+@media screen and (min-width: 768px) {
+  .login .login__wrapper .login__innerwrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-top: var(--font-xl);
+  }
+
+  .login .login__wrapper .login__innerwrapper .login__local {
+    margin-top: var(--font-s);
+  }
+
+  .login .login__local button {
+    margin-bottom: 0;
+  }
+}

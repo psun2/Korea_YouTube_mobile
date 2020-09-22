@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+.header {
+  background-color: var(--color-white);
+}
+
+/* status */
+.header .header__statusbar {
+  font-size: var(--font-m);
+  font-weight: bold;
+  padding: var(--space-nomal);
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header__statusbar .statusbar__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header__statusbar .statusbar__icons li:nth-child(2) {
+  margin: var(--space-nomal);
+}
+
+/* nav */
+.header__navbar {
+  font-size: var(--font-x);
+  padding: var(--space-nomal);
+  padding-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navbar .navbar__column .navbar__logo {
+  font-weight: bold;
+}
+
+.header__navbar .navbar__column .navbar__logo i {
+  color: var(--color-red);
+}
+
+.header__navbar .navbar__column .navbar__icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__navbar .navbar__column .navbar__icons li {
+  flex: 1;
+}
+
+.header__navbar .navbar__column .navbar__icons li a {
+  padding: var(--space-nomal);
+  padding-top: 0;
+}
+
+.header__navbar .navbar__column .navbar__icons li:active {
+  transform: scale(0.9);
+}
+
+.header__navbar .navbar__column .navbar__icons li:last-child a {
+  padding-right: 0;
+}
+
+.header__navbar .navbar__column .navbar__icons li.login {
+  color: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background-color: var(--color-white);
+    padding: var(--space-lg);
+  }
+  .header .header__statusbar {
+    display: none;
+  }
+
+  .header__navbar .navbar__column .navbar__logo {
+    font-size: 70px;
+  }
+
+  .header__navbar .navbar__column .navbar__icons {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* footer */
+.footer {
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--space-lg) 0;
+  border-top: 1px solid #ececec;
+  font-weight: bold;
+  background-color: var(--color-white);
+  transition: opacity 1s linear;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.footer.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.footer .footer__navbar .navbar__icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer .footer__navbar .navbar__icons li {
+  flex: 1;
+}
+
+.footer .footer__navbar .navbar__icons li.active {
+  color: var(--color-red);
+}
+
+.footer .footer__navbar .navbar__icons a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-nomal);
+}
+
+.footer .footer__navbar .navbar__icons a:active {
+  transform: scale(0.9);
+}
+
+.footer .footer__navbar .navbar__icons a span {
+  margin-top: var(--space-small);
+}
+
+/* scroll */
+.scroll.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+.scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* position: absolute; */
+  position: fixed;
+  right: 10px;
+  bottom: 100px;
+  transition: opacity 3s;
+  pointer-events: all;
+  opacity: 1;
+}
+
+.scroll button {
+  outline: none;
+  background: none;
+  padding: 10px;
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.scroll button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.scroll button:active {
+  transform: scale(0.99);
+}
+
+.scroll .scroll__top {
+  border-bottom: none;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+}
+
+.scroll .scroll__bottom {
+  border-top: none;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    position: sticky;
+    top: 0;
+    border: none;
+    margin-bottom: var(--space-nomal);
+    border-bottom: 1px solid #ececec;
+  }
+}

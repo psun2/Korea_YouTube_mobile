@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/5d1d5aa1e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- main.js -->
+    <script async defer src="./js/main.js"></script>
+    <!-- weather.js -->
+    <script async defer src="./js/weather.js"></script>
+    <!-- index.js -->
+    <script async defer src="./js/index.js"></script>
+    <!-- modal.js -->
+    <script async defer src="./js/modal.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__statusbar">
+        <div class="statusbar__clock">7:04</div>
+        <div class="statusbar__weather">날씨</div>
+        <ul class="statusbar__icons">
+          <li><i class="fas fa-signal"></i></li>
+          <li><i class="fas fa-wifi"></i></li>
+          <li><i class="fas fa-battery-full"></i></li>
+        </ul>
+      </div>
+      <nav class="header__navbar">
+        <div class="navbar__column">
+          <div class="navbar__logo">
+            <a href="index.html">
+              <i class="fab fa-youtube"></i>
+              <span class="navbar__title">YouTube</span>
+            </a>
+          </div>
+        </div>
+        <div class="navbar__column">
+          <ul class="navbar__icons">
+            <li>
+              <a href="#"><i class="fas fa-mobile"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-video"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-search"></i></a>
+            </li>
+            <li>
+              <a id="toggleLogin" href="login.html"
+                ><i class="fas fa-user-circle"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- // header -->
+
+    <!-- main -->
+    <main class="notice">
+      <div class="notice__content">
+        <div class="notice__avatar">
+          <span class="notice__new">&middot;</span>
+          <img src="https://placeimg.com/64/64/1" alt="contentImage" />
+        </div>
+        <div class="notice__summary">
+          <div class="summary__title">
+            맞춤 동영상:원피스 991화 최신이야기 고찰 :: 호킨스 드레이크중 하나가
+            죽는다?
+          </div>
+          <div class="summary__date">21시간전</div>
+        </div>
+        <div class="notice__img">
+          <img src="https://placeimg.com/128/64/2" alt="contentImage" />
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </div>
+      <div class="notice__content">
+        <div class="notice__avatar">
+          <span class="notice__new">&middot;</span>
+          <img src="https://placeimg.com/64/64/3" alt="contentImage" />
+        </div>
+        <div class="notice__summary">
+          <div class="summary__title">
+            맞춤 동영상:원피스 991화 최신이야기 고찰 :: 호킨스 드레이크중 하나가
+            죽는다?
+          </div>
+          <div class="summary__date">21시간전</div>
+        </div>
+        <div class="notice__img">
+          <img src="https://placeimg.com/128/64/4" alt="contentImage" />
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </div>
+      <div class="notice__content">
+        <div class="notice__avatar">
+          <span class="notice__new">&middot;</span>
+          <img src="https://placeimg.com/64/64/5" alt="contentImage" />
+        </div>
+        <div class="notice__summary">
+          <div class="summary__title">
+            맞춤 동영상:원피스 991화 최신이야기 고찰 :: 호킨스 드레이크중 하나가
+            죽는다?
+          </div>
+          <div class="summary__date">21시간전</div>
+        </div>
+        <div class="notice__img">
+          <img src="https://placeimg.com/128/64/6" alt="contentImage" />
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </div>
+    </main>
+    <!-- // main -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <nav class="footer__navbar">
+        <ul class="navbar__icons">
+          <li>
+            <a href="./index.html"
+              ><i class="fas fa-home"></i><span>홈</span></a
+            >
+          </li>
+          <li>
+            <a href="./search.html"
+              ><i class="far fa-compass"></i><span>탐색</span></a
+            >
+          </li>
+          <li>
+            <a href="./subscribe.html"
+              ><i class="far fa-caret-square-right"></i><span>구독</span></a
+            >
+          </li>
+          <li class="active">
+            <a href="./notice.html"
+              ><i class="far fa-bell"></i><span>알림</span></a
+            >
+          </li>
+          <li>
+            <a href="./list.html"
+              ><i class="far fa-list-alt"></i><span>보관함</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <!-- // footer -->
+
+    <!-- modal -->
+    <div class="modal">
+      <div class="modal__container">
+        <div class="modal__header">
+          <div class="modal__title">제목</div>
+          <span>&times;</span>
+        </div>
+        <div class="modal__body">
+          <div class="moda__content">내용</div>
+          <div class="modal__close"><button type="button">닫기</button></div>
+        </div>
+      </div>
+    </div>
+    <!-- // modal -->
+
+    <!-- scrollBtn -->
+    <div class="scroll hide">
+      <button class="scroll__top">
+        <i class="fas fa-angle-double-up"></i>
+      </button>
+      <button class="scroll__bottom">
+        <i class="fas fa-angle-double-down"></i>
+      </button>
+    </div>
+  </body>
+</html>

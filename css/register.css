@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+.register .register__from {
+  padding: 0 40px;
+}
+
+.register .register__from .register__title {
+  margin: 10% 0;
+  font-size: 40px;
+  text-align: center;
+}
+
+.register .register__from .register__column {
+  margin-bottom: var(--space-nomal);
+}
+
+.register .register__from .register__column label {
+  margin-bottom: var(--space-nomal);
+}
+
+.register input,
+.register label {
+  display: block;
+  width: 100%;
+}
+
+.register .register__from .register__column .register__userID {
+  display: flex;
+}
+
+.register .register__from button {
+  min-width: 70px;
+  margin-left: var(--space-nomal);
+}
+
+.register div input {
+  padding: var(--space-nomal);
+}
+
+.register .register__from .password__result {
+  margin: var(--space-nomal) 0;
+  color: var(--color-red);
+  font-weight: bold;
+}
+
+.register
+  .register__from
+  .register__column
+  .register__zipcolumn
+  .zipcolumn__wrapper {
+  display: flex;
+}
+
+.register .register__from .register__column #zipcodeAddr {
+  margin: var(--space-nomal) 0;
+}
+
+.register .resiger__submit {
+  padding: 0 40px;
+}
+
+.register button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 7px 6px 10px -5px rgba(0, 0, 0, 0.3),
+    0px 9px 18px -11px rgba(0, 0, 0, 0.025);
+}
+.register .resiger__submit button {
+  display: block;
+  width: 100%;
+  padding: var(--space-nomal);
+}
+
+.register button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.register button:active {
+  transform: scale(0.99);
+}
+
+@media screen and (min-width: 768px) {
+  .register .register__from .register__title {
+    margin: 100px;
+  }
+
+  .register .register__from .register__column,
+  .register .register__from .register__column .register__zipcolumn {
+    display: flex;
+  }
+
+  .register .register__from .register__column div {
+    width: 100%;
+  }
+
+  .register .register__from .register__column label {
+    max-width: 150px;
+  }
+
+  .register .register__from button {
+    min-width: 150px;
+  }
+
+  .register .register__from .register__column:last-child {
+    flex-direction: column;
+  }
+
+  .register .resiger__submit {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .register .resiger__submit button {
+    width: 150px;
+  }
+  .register .register__from .password__result {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .register {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .register .register__from .register__column {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .register .register__from .register__column .register__zipcolumn {
+    display: flex;
+    align-items: center;
+  }
+}
